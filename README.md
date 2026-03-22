@@ -1,1 +1,1 @@
-# MP_Cloud_Training
+# IDDE laborfeladatok
