@@ -11,5 +11,6 @@ public interface CarFeatureMapper {
     CarFeatureResponseDto toDto(CarFeature feature);
 
     @Mapping(target = "uuid", ignore = true)
+    @Mapping(target = "id", ignore = true)
     CarFeature toEntity(CarFeatureRequestDto request);
 }
