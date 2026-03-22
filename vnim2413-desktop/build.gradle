@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'edu.bbte.idde.vnim2413'
+version = 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":vnim2413-backend")
+}
+
+application {
+    mainClass = 'edu/bbte/idde/vnim2413/Main'
+}

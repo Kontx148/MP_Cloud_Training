@@ -1,0 +1,8 @@
+{
+  "profile": "jdbc",
+  "jdbcUrl": "jdbc:mysql://localhost:3306/idde",
+  "jdbcDriver": "com.mysql.cj.jdbc.Driver",
+  "username": "root",
+  "password": "vDS4WeNJ50wDH8i",
+  "connectionPoolSize": 10
+}

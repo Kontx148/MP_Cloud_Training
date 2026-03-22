@@ -1,0 +1,52 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 40px;
+    background: #f5f7fa;
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.car-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.car-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.car-table th {
+    background: #34495e;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.car-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.car-table tr:nth-child(even) {
+    background: #f0f4f8;
+}
+
+.car-table tr:hover {
+    background: #e8f0ff;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}

@@ -1,0 +1,11 @@
+{
+  "jdbc": {
+    "createTables": false,
+    "driverClass": "org.h2.asd",
+    "url": "jdbc:h2:mem:test;asd=-1"
+  },
+  "connectionPool": {
+    "poolSize": 433
+  }
+}
+

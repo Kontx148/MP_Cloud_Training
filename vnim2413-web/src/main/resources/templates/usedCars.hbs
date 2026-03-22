@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Used Cars</title>
+    <link rel="stylesheet" href="{{contextPath}}/static/style.css">
+</head>
+<body>
+
+<form action="{{contextPath}}/logout" method="get" style="text-align:right;">
+    <button type="submit">Logout</button>
+</form>
+
+<h1>Used Car Listings</h1>
+
+<div class="car-container">
+    {{#if cars.length}}
+        <table class="car-table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>UUID</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Price</th>
+                <th>Upload Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each cars}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{uuid}}</td>
+                    <td>{{make}}</td>
+                    <td>{{model}}</td>
+                    <td>{{fabricationYear}}</td>
+                    <td>{{price}}</td>
+                    <td>{{uploadDate}}</td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    {{else}}
+        <p>No cars available.</p>
+    {{/if}}
+</div>
+
+</body>
+</html>

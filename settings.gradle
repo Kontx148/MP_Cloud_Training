@@ -1,0 +1,7 @@
+rootProject.name = 'vnim2413-idde'
+include 'vnim2413-backend'
+include 'vnim2413-desktop'
+include 'vnim2413-web'
+include 'vnim2413-spring'
+include 'Gyakorlas'
+

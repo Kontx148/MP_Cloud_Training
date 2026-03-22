@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group = 'edu.bbte.idde.vnim2413'
+version = 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.20.1")
+    implementation("io.github.cdimascio:dotenv-java:3.2.0")
+    runtimeOnly group: 'mysql', name: 'mysql-connector-java', version: '8.0.33'
+}
+

@@ -1,0 +1,13 @@
+{
+  "jdbc_profile_example" : {
+    "profile": "jdbc",
+    "jdbcUrl": "JDBC_URL",
+    "jdbcDriver": "com.mysql.cj.jdbc.Driver",
+    "username": "JDBC_USERNAME",
+    "password": "JDBC_PASSWORD",
+    "connectionPoolSize": 10
+  },
+  "memory_profile_example" : {
+    "profile": "memory"
+  }
+}
