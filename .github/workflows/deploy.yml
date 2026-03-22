@@ -28,6 +28,9 @@ jobs:
       - name: Build submodule
         run: ./gradlew :vnim2413-spring:build -x test
 
+      - name: Build bootJar
+        run: ./gradlew :vnim2413-spring:bootJar -x test
+
       - name: List built jars
         run: ls -la vnim2413-spring/build/libs
 
@@ -48,4 +51,4 @@ jobs:
         with:
           app-name: 'mp-java-veres-norbert'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: 'vnim2413-spring/build/libs/vnim2413-spring-1.0-SNAPSHOT.war'
+          package: 'vnim2413-spring/build/libs/*.jar'
