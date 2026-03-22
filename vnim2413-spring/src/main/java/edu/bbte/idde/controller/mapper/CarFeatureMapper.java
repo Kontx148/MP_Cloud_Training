@@ -10,7 +10,7 @@ import org.mapstruct.Mapping;
 public interface CarFeatureMapper {
     CarFeatureResponseDto toDto(CarFeature feature);
 
-    @Mapping(target = "uuid", ignore = true)
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "uuid", ignore = true)
     CarFeature toEntity(CarFeatureRequestDto request);
 }
