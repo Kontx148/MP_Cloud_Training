@@ -31,6 +31,18 @@ jobs:
       - name: List built jars
         run: ls -la vnim2413-spring/build/libs
 
+      - name: Show repo structure
+        run: |
+          pwd
+          ls -la
+          find . -maxdepth 4 -type f | sort
+
+      - name: Show submodule build output
+        run: |
+          ls -la vnim2413-spring
+          ls -la vnim2413-spring/build || true
+          ls -la vnim2413-spring/build/libs || true
+
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
