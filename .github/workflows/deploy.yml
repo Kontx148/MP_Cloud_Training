@@ -9,10 +9,6 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: vnim2413-spring
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,10 +23,13 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
 
       - name: Make gradlew executable
-        run: chmod +x ./gradlew
+        run: chmod +x gradlew
 
-      - name: Build with Gradle
-        run: ./gradlew build -x test
+      - name: Build submodule
+        run: ./gradlew :vnim2413-spring:build -x test
+
+      - name: List built jars
+        run: ls -la vnim2413-spring/build/libs
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
