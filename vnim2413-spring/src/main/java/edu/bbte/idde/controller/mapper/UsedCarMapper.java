@@ -11,5 +11,6 @@ public interface UsedCarMapper {
     UsedCarResponseDto toDto(UsedCarListing usedCarListing);
 
     @Mapping(target = "uuid", ignore = true)
+    @Mapping(target = "id", ignore = true)
     UsedCarListing toEntity(UsedCarRequestDto usedCarRequestDto);
 }
